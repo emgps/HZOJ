@@ -1,3 +1,2 @@
-# HZOJ
-### 题库：https://oj.haizeix.com/ 
+# 题库
 ### 以及一些课上笔记
