@@ -1,4 +1,4 @@
-//板子 ：输出每一位数字
+//掳氓脳脫 拢潞脢盲鲁枚脙驴脪禄脦禄脢媒脳脰
 #include <stdio.h>
 
 int main(void){
