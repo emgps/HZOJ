@@ -1,16 +1,16 @@
-//Ëã·¨£º¶ş·Ö²éÕÒ
+//ç®—æ³•ï¼šäºŒåˆ†æŸ¥æ‰¾
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
 int main() {
-    //Éú³ÉËæ»úÊı×é 
+    //ç”Ÿæˆéšæœºæ•°ç»„ 
 	srand(time(0));
     int arr[10] = {0};
     for (int i = 1; i < 10; i++) {
         arr[i] = arr[i - 1] + (rand() % 10);
     }
-    //Ìí¼ÓÉÏ±êºÍ¿Õ¸ñ 
+    //æ·»åŠ ä¸Šæ ‡å’Œç©ºæ ¼ 
 	int len = 0;
     for (int i = 0; i < 10; i++) {
         len += printf("%4d", i);
@@ -22,7 +22,7 @@ int main() {
         printf("%4d", arr[i]);
     }
     printf("\n");
-    //Õı³£²éÕÒ£¨±éÀú£© 
+    //æ­£å¸¸æŸ¥æ‰¾ï¼ˆéå†ï¼‰ 
 	int x;
     while (scanf("%d", &x) != EOF) {
         int cnt1 = 0, cnt2 = 0, flag1 = 0, flag2 = 0;
@@ -32,10 +32,10 @@ int main() {
             flag1 = 1;
             break;
         }
-    //¶ş·Ö²éÕÒ 
+    //äºŒåˆ†æŸ¥æ‰¾ 
         int l = 0, r = 9, mid;
         while (l <= r) {
-            cnt2 += 1;//¶ş·Ö²éÕÒµÄ´ÎÊı 
+            cnt2 += 1;//äºŒåˆ†æŸ¥æ‰¾çš„æ¬¡æ•° 
             mid = (l + r) >> 1;
             if (arr[mid] == x) {
                 printf("(%d) arr[%d] = %d, find %d\n", cnt2, mid, arr[mid], x);
