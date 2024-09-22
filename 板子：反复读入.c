@@ -1,4 +1,4 @@
-//板子：反复读入
+//掳氓脳脫拢潞路麓赂麓露脕脠毛
 #include <stdio.h>
 
 int main(void){
