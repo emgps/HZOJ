@@ -3,17 +3,17 @@
 int main() {
     int a, b, c = 0;
     scanf("%d%d", &a, &b);
-    for (int i = a; i <= b; i++) {					//±éÀú 
+    for (int i = a; i <= b; i++) {					//éåŽ† 
         int flag = 1;
         for (int j = 2; j * j <= i && flag; j++) {
-            if (i % j) continue;					//ÅÐ¶ÏÖÊÊý£¨´Ó2µ½saqrt£¨i£©ÊÔ³ý£© 
+            if (i % j) continue;					//åˆ¤æ–­è´¨æ•°ï¼ˆä»Ž2åˆ°saqrtï¼ˆiï¼‰è¯•é™¤ï¼‰ 
             flag = 0;
         } 
         if (flag == 0) continue;
         int x = i, y = 0;
         while (x) {							
             y = y * 10 + x % 10;
-            x /= 10;								//¶ÔÈýÎ»Êý»ØÎÄµÄÅÐ¶Ï 
+            x /= 10;								//å¯¹ä¸‰ä½æ•°å›žæ–‡çš„åˆ¤æ–­ 
         }
         if (y != i) continue;
         if (c) printf(" ");
