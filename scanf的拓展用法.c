@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 int main(void) {
-    // 格式化读入 
+    // 赂帽脢陆禄炉露脕脠毛 
     int a, b, n; 
     printf("format scanf, input %%dabc%%d: ");
     n = scanf("%dabc%d", &a, &b);
     printf("a = %d, b = %d, n = %d\n", a, b, n);
     return 0;
-    // 注意：EOF值为-1 
+    // 脳垄脪芒拢潞EOF脰碌脦陋-1 
 }
 
