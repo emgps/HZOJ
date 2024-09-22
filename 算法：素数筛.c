@@ -1,11 +1,11 @@
-//Ëã·¨£ºËØÊıÉ¸
+//ç®—æ³•ï¼šç´ æ•°ç­›
 #include <stdio.h>
 
 int prime[1000] = {0};
 
 void init_prime(int n){
 	prime[0] = prime[1] = 1;
-	for(int i = 2; i * i <= n; i++){					//ÓÅ»¯£º±éÀúµ½sqrt£¨i£©¼´¿É 
+	for(int i = 2; i * i <= n; i++){					//ä¼˜åŒ–ï¼šéå†åˆ°sqrtï¼ˆiï¼‰å³å¯ 
 		if(prime[i])continue;
 		for(int j = i * i; j <= n; j += i){
 			prime[j] = 1;
